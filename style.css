@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:400");
+
 :root {
-	--vertical-padding: 3rem;
-	--horizontal-padding: 4%;
-	--vertical-spacing: 2.5rem;
+    --vertical-padding: 3rem;
+    --horizontal-padding: 4%;
+    --vertical-spacing: 2.5rem;
 }
+
 #particle {
     background-color: black;
     position: relative;
@@ -44,15 +46,17 @@
     border-bottom-left-radius: 50% 50%;
 }
 
-header{
+header {
     min-height: auto;
 }
+
 @media screen and (max-width: 670px) {
     header {
         min-height: auto;
         min-width: 100%;
     }
-    h2.center{
+
+    h2.center {
         font-size: 30px;
     }
 }
@@ -62,11 +66,11 @@ header{
     margin-bottom: 4vw;
 }
 
-.hire-me{
+.hire-me {
     margin-top: 10px;
 }
 
-h1.center{
+h1.center {
     margin-top: 0;
 }
 
@@ -75,60 +79,100 @@ h1.center{
 
 
 .main {
-	max-width: 92%;
-	width: 100%;
-	margin: auto;
-	padding-left: var(--horizontal-padding);
-	padding-right: var(--horizontal-padding);
+    max-width: 92%;
+    width: 100%;
+    margin: auto;
+    padding-left: var(--horizontal-padding);
+    padding-right: var(--horizontal-padding);
 }
 
 .skills {
     padding: var(--vertical-padding) 0;
     font-family: "Heebo", sans-serif;
-	background-color: #282843;
-	display: grid;
-	height: auto;
-} 
-
-#skills_level {
-	text-align: center;
-	margin-bottom: var(--vertical-spacing);
+    background-color: #282843;
+    display: grid;
+    height: auto;
 }
 
- h4 strong {
-	font-size: 13px;
-	color: black;
-	font-weight: 400;
-	text-transform: uppercase;
+#skills_level {
+    text-align: center;
+    margin-bottom: var(--vertical-spacing);
+}
+
+h4 strong {
+    font-size: 13px;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
     letter-spacing: .3rem;
     text-align: center;
 }
 
 .animation {
-	width: 100% !important;
-	height: auto !important;
-	display: none !important;
-	visibility: hidden !important;
+    width: 100% !important;
+    height: auto !important;
+    display: none !important;
+    visibility: hidden !important;
 }
-.animation{
+
+.animation {
     position: relative;
 }
 
-@media screen and (min-width: 1025px) { 
-	[data-size="1025"] {
-		display: block !important;
-		visibility: visible !important;
-	}
+@media screen and (min-width: 1025px) {
+    [data-size="1025"] {
+        display: block !important;
+        visibility: visible !important;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-	[data-size="1024"] {
-		display: block !important;
-		visibility: visible !important;
-	}
-} 
+    [data-size="1024"] {
+        display: block !important;
+        visibility: visible !important;
+    }
+}
 
 
-.tabs{
+.tabs {
     margin: 10px 0;
+}
+
+
+.wrapper {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centeredBox {
+    width: 100%;
+    text-align: center;
+    color: #00c853;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 670px){
+    .centeredBox {
+        width: 100%;
+        text-align: center;
+        color: #00c853;
+        font-size: 18px;
+    }
+}
+
+/* The Typewriter */
+
+
+/* #typewriter {} */
+
+.cursor {
+    border-left: 4px solid #00c853;
+}
+
+.dollar:before {
+    content: '$';
+    color: #00c853;
 }
