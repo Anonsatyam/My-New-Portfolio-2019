@@ -1,0 +1,203 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Photo Ninja</title>
+</head>
+
+<body>
+	<div id="particle">
+		<header>
+			<nav class="nav-wrapper transparent z-depth-1">
+				<div class="container">
+					<a href="#" class="brand-logo">Logo</a>
+					<a href="#" class="sidenav-trigger" data-target="mobile-menu">
+						<i class="material-icons">menu</i>
+					</a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Skills</a></li>
+						<li><a href="#">My Works</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#" class="tooltipped btn-floating btn-small indigo-darken-4 transparent"
+								data-tooltip="Instagram">
+								<i class="fab fa-instagram"></i>
+							</a></li>
+						<li><a href="#" class="tooltipped btn-floating btn-small indigo-darken-4 transparent"
+								data-tooltip="Github">
+								<i class="fab fa-github"></i>
+							</a></li>
+						<li><a href="#" class="tooltipped btn-floating btn-small indigo-darken-4 transparent"
+								data-tooltip="Linkedin">
+								<i class="fab fa-linkedin"></i>
+							</a></li>
+					</ul>
+					<ul class="sidenav " id="mobile-menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Skills</a></li>
+						<li><a href="#">My Works</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div class="text">
+				<div class="row center">
+					<img class="circular--square circle" src="image/man.jpg" />
+				</div>
+				<h2 class="center">Satyam Singh</h2>
+				<p class="center">I'M A WEB DEVELOPER | DESIGNER <br>
+					<a class="waves-effect waves-light btn hire-me">Hire Me</a>
+				</p>
+
+			</div>
+		</div>
+	</div>
+
+	<section class="container section" id="services">
+		<div class="row">
+			<h1 class="center"><b>About</b></h1>
+			<div class="col s12 l4">
+				<h5 class="indigo-text text-darker-4">Hi! I'm <span>Satyam Singh</span></h5>
+				<p>I am a student cum Web
+					Developer and I am currently working remotely as a <b>Full Stack Web Developer</b> on
+					Freelancer.</b>
+					I am a self taught programmer and I love to code <a href="#"><i class="fab fa-heart"></i></a>.
+				</p>
+			</div>
+			<div class="col s12 l6 offset-l2">
+				<ul class="tabs">
+					<li class="tab sol s6">
+						<a href="#web_dev" class="indigo-text text-darker-4">Web Development</a>
+					</li>
+					<li class="tab sol s6">
+						<a href="#app_dev" class="indigo-text text-darker-4">App Development</a>
+					</li>
+				</ul>
+				<div class="col s12" id="web_dev">
+					<p class="flow-text indigo-text text-darken-4">Web Development</p>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ipsam ut odio hic rem sequi
+						amet labore perspiciatis cum maiores nulla repellendus nisi.</p>
+					<a class="waves-effect waves-light btn">More Info</a>
+				</div>
+				<div class="col s12" id="app_dev">
+					<p class="flow-text indigo-text text-darken-4">App Development</p>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ipsam ut odio hic rem sequi
+						amet labore perspiciatis cum maiores nulla repellendus nisi.</p>
+					<a class="waves-effect waves-light btn">More Info</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="skills section">
+		<div class="main col s12 l6 offset-l2">
+			<h4 class="center white-text" id="skills_level">My Skills</h4>
+			<ul class="tabs transparent center">
+				<li class="tab sol s6">
+					<a href="#front_dev" class="white-text text-darker-4">Frontend Skills</a>
+				</li>
+				<li class="tab sol s6">
+					<a href="#back_dev" class="white-text text-darker-4">Backend Skills</a>
+				</li>
+			</ul>
+			<div class="box">
+				<div class="col s12" id="front_dev">
+					<canvas class="animation" data-size="1025" id="vertical-chart-f"
+						aria-label="Oscar's Skills Graph On Desktop" role="img"></canvas>
+					<canvas class="animation" data-size="1024" id="horizontal-chart-f"
+						aria-label="Oscar's Skills Graph On Mobile" role="img"></canvas>
+				</div>
+				<div class="col s12" id="back_dev">
+					<canvas class="animation" data-size="1025" id="vertical-chart-b"
+						aria-label="Oscar's Skills Graph On Desktop" role="img"></canvas>
+					<canvas class="animation" data-size="1024" id="horizontal-chart-b"
+						aria-label="Oscar's Skills Graph On Mobile" role="img"></canvas>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container section">
+		<h4 class="center black-text" id="skills_level">My Works</h4>
+		<p class="center black-text">Here below is some of my recents works</p>
+		<div class="row">
+			<div class="col s12 m4">
+				<div class="card">
+					<div class="card-image">
+						<img src="image/nature.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+					<div class="card-content">
+						<p>I am a very simple card. I am good at containing small bits of information.
+							I am convenient because I require little markup to use effectively.</p>
+					</div>
+					<div class="card-action">
+						<a href="#">This is a link</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4">
+				<div class="card">
+					<div class="card-image">
+						<img src="image/portrait.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+					<div class="card-content">
+						<p>I am a very simple card. I am good at containing small bits of information.
+							I am convenient because I require little markup to use effectively.</p>
+					</div>
+					<div class="card-action">
+						<a href="#">This is a link</a>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m4">
+				<div class="card">
+					<div class="card-image">
+						<img src="image/nature.jpg">
+						<span class="card-title">Card Title</span>
+					</div>
+					<div class="card-content">
+						<p>I am a very simple card. I am good at containing small bits of information.
+							I am convenient because I require little markup to use effectively.</p>
+					</div>
+					<div class="card-action">
+						<a href="#">This is a link</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="particle.js" defer="defer"></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js'></script>
+	<script src="style.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.sidenav').sidenav();
+			$('.materialboxed').materialbox();
+			$('.parallax').parallax();
+			$('.tabs').tabs();
+			$('.tooltipped').tooltip();
+		});
+	</script>
+
+</body>
+
+</html>
