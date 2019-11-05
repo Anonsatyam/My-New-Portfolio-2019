@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:400");
+body{
+    background-color: #e0e0e0 grey;
+}
 
 :root {
     --vertical-padding: 3rem;
@@ -59,6 +62,9 @@ header {
     h2.center {
         font-size: 30px;
     }
+    .details{
+        min-width: 100%;
+    }
 }
 
 .section {
@@ -73,7 +79,9 @@ header {
 h1.center {
     margin-top: 0;
 }
-
+.contact{
+    width: 100%;
+}
 
 
 
@@ -87,7 +95,7 @@ h1.center {
 }
 
 .skills {
-    padding: var(--vertical-padding) 0;
+    /* padding: var(--vertical-padding) 0; */
     font-family: "Heebo", sans-serif;
     background-color: #282843;
     display: grid;
@@ -96,7 +104,7 @@ h1.center {
 
 #skills_level {
     text-align: center;
-    margin-bottom: var(--vertical-spacing);
+    /* margin-bottom: var(--vertical-spacing); */
 }
 
 h4 strong {
@@ -151,7 +159,8 @@ h4 strong {
     width: 100%;
     text-align: center;
     color: #00c853;
-    font-size: 24px;
+    font-size: 20px;
+    font-family: "Monaco", Inconsolata, monospace;
 }
 
 @media screen and (max-width: 670px){
@@ -161,6 +170,35 @@ h4 strong {
         color: #00c853;
         font-size: 18px;
     }
+    #boxes .window {
+        position: absolute;
+        left: 0;
+        top: 100px !important;
+        width: 300px !important;
+        height: 200px;
+        display: none;
+        z-index: 9999;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+      }
+      
+      #boxes #dialog {
+        width: 750px;
+        height: 300px;
+        padding: 10px;
+        background-color: #ffffff;
+        font-family: 'Segoe UI Light', sans-serif;
+        font-size: 15pt;
+      }
+      #popupfoot {
+        font-size: 16pt;
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+        width: 100% !important;
+        left: 0 !important;
+      }
 }
 
 /* The Typewriter */
@@ -176,3 +214,58 @@ h4 strong {
     content: '$';
     color: #00c853;
 }
+
+
+/* #section{
+    
+} */
+
+
+
+
+
+
+
+#mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 3203px !important;
+    z-index: 9000;
+    background-color: #000;
+    display: none;
+  }
+  
+  #boxes .window {
+    position: absolute;
+    left: 0;
+    top: 100px !important;
+    width: 400px;
+    height: 200px;
+    display: none;
+    z-index: 9999;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  #boxes #dialog {
+    width: 750px;
+    height: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI Light', sans-serif;
+    font-size: 15pt;
+  }
+  
+  #popupfoot {
+    font-size: 16pt;
+    position: absolute;
+    bottom: 0px;
+    width: 250px;
+    left: 250px;
+    margin-bottom: 20px;
+  }
+  /* PreLoader */
+
+  

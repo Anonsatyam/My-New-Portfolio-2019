@@ -42,20 +42,20 @@ var bar_chart_v = new Chart(bar_ctx_v, {
             display: false
         },
         animation: {
-            duration: 3000,
+            duration: 1000,
             easing: 'easeInBounce'
         },
         scales: {
             yAxes: [{
                 gridLines: {
-                    lineWidth: 3,
+                    lineWidth: 1,
                     color: '#313154'
                 },
                 ticks: {
-                    min: 25,
+                    min: 0,
                     max: 100,
-                    stepSize: 25,
-                    fontSize: 13,
+                    stepSize: 10,
+                    fontSize: 10,
                     fontColor: "#FFFFFF"
                 }
             }],
@@ -64,29 +64,29 @@ var bar_chart_v = new Chart(bar_ctx_v, {
                     display: false,
                 },
                 ticks: {
-                    fontSize: 13,
+                    fontSize: 10,
                     fontColor: "#FFFFFF",
                     padding: 10
                 },
-                barPercentage: 0.6
+                barPercentage: 0.4
             }],
         },
       	tooltips: {
           backgroundColor: '#282843',
           titleFontFamily: 'Heebo',
           titleFontColor: '#e79aaf',
-          titleFontSize: 13,
-          titleMarginBottom: 8,
+          titleFontSize: 10,
+          titleMarginBottom: 4,
           bodyFontFamily: 'Heebo',
-          bodyFontSize: 13,
+          bodyFontSize: 10,
           bodyFontColor: '#ffffff',
           multiKeyBackground: '#e9198e',
           borderColor: '#e9198e',
-          borderWidth: 2,
-          caretSize: 5,
-          cornerRadius: 5,
-          xPadding: 15,
-          yPadding: 15
+          borderWidth: 1,
+          caretSize: 3,
+          cornerRadius: 3,
+          xPadding: 10,
+          yPadding: 10
         }
     }
 });
@@ -421,4 +421,56 @@ function StartWriter(i) {
 setTimeout( function () {
 	StartWriter(0);
 },500);
-	
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {	
+
+    var id = '#dialog';
+        
+    //Get the screen height and width
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+        
+    //Set heigth and width to mask to fill up the whole screen
+    $('#mask').css({'width':maskWidth,'height':maskHeight});
+    
+    //transition effect
+    $('#mask').fadeIn(500);	
+    $('#mask').fadeTo("slow",0.9);	
+        
+    //Get the window height and width
+    var winH = $(window).height();
+    var winW = $(window).width();
+                  
+    //Set the popup window to center
+    $(id).css('top',  winH/2-$(id).height()/2);
+    $(id).css('left', winW/2-$(id).width()/2);
+        
+    //transition effect
+    $(id).fadeIn(2000); 	
+        
+    //if close button is clicked
+    $('.window .close').click(function (e) {
+    //Cancel the link behavior
+    e.preventDefault();
+    
+    $('#mask').hide();
+    $('.window').hide();
+    });
+    
+    //if mask is clicked
+    $('#mask').click(function () {
+    $(this).hide();
+    $('.window').hide();
+    });
+        
+    });
