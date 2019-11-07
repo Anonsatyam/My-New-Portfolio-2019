@@ -20,7 +20,7 @@ var bar_chart_v = new Chart(bar_ctx_v, {
         labels: ["H T M L 5", "C S S 3", "J A V A S C R I P T", "S A S S", "R E A C T  J S", "A N G U L A R  J S", "B O O T S T R A P"],
         datasets: [{
             label: "S K I L L  S C O R E",
-            data: [99, 99, 80, 90, 80, 85, 85, 90],
+            data: [99, 99, 80, 90, 80, 85, 85],
             backgroundColor: gradientColorV,
             hoverBackgroundColor: gradientHoverV,
             hoverBorderWidth: 2,
@@ -111,7 +111,7 @@ var bar_chart_h = new Chart(bar_ctx_h, {
         labels: ["H T M L 5", "C S S 3", "J A V A S C R I P T", "S A S S", "R E A C T  J S", "A N G U L A R  J S", "B O O T S T R A P"],
         datasets: [{
             label: "S K I L L  S C O R E",
-            data: [99, 99, 80, 90, 80, 85, 85, 90],
+            data: [99, 99, 80, 90, 80, 85, 85],
             backgroundColor: gradientColorH,
             hoverBackgroundColor: gradientHoverH,
             hoverBorderWidth: 1,
@@ -156,7 +156,7 @@ var bar_chart_h = new Chart(bar_ctx_h, {
                     min: 50,
                     max: 100,
                     stepSize: 25,
-                    fontSize: 13,
+                    fontSize: 10,
                     fontColor: "#FFFFFF"
                 }
             }],
@@ -199,7 +199,7 @@ gradientHoverV.addColorStop(1, '#e79aaf');
 var bar_chart_v = new Chart(bar_ctx_v, {
     type: 'bar',
     data: {
-        labels: ["M Y S Q L", "M O N G O D B", "P H P", "J A V A S C R I P T", "P Y T H O N", "C++"],
+        labels: ["M Y S Q L", "M O N G O D B", "P H P", "J A V A S C R I P T", "P Y T H O N", "C"],
         datasets: [{
             label: "S K I L L  S C O R E",
             data: [99, 99, 80, 90, 80, 85],
@@ -290,7 +290,7 @@ gradientHoverH.addColorStop(1, '#e79aaf');
 var bar_chart_h = new Chart(bar_ctx_h, {
     type: 'horizontalBar',
     data: {
-        labels: ["M Y S Q L", "M O N G O D B", "P H P", "J A V A S C R I P T", "P Y T H O N", "C++"],
+        labels: ["M Y S Q L", "M O N G O D B", "P H P", "J A V A S C R I P T", "P Y T H O N", "C"],
         datasets: [{
             label: "S K I L L  S C O R E",
             data: [99, 99, 80, 90, 80, 85],
