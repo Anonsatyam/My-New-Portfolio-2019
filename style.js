@@ -52,7 +52,7 @@ var bar_chart_v = new Chart(bar_ctx_v, {
                     color: '#313154'
                 },
                 ticks: {
-                    min: 0,
+                    min: 10,
                     max: 100,
                     stepSize: 10,
                     fontSize: 10,
@@ -142,20 +142,20 @@ var bar_chart_h = new Chart(bar_ctx_h, {
                     display: false,
                 },
                 ticks: {
-                    fontSize: 13,
+                    fontSize: 10,
                     fontColor: "#FFFFFF"
                 },
                 barPercentage: 1
             }],
             xAxes: [{
                 gridLines: {
-                    lineWidth: 2,
+                    lineWidth: 1,
                     color: '#313154'
                 },
                 ticks: {
-                    min: 50,
+                    min: 10,
                     max: 100,
-                    stepSize: 25,
+                    stepSize: 10,
                     fontSize: 10,
                     fontColor: "#FFFFFF"
                 }
@@ -165,18 +165,18 @@ var bar_chart_h = new Chart(bar_ctx_h, {
           backgroundColor: '#282843',
           titleFontFamily: 'Heebo',
           titleFontColor: '#e79aaf',
-          titleFontSize: 13,
+          titleFontSize: 10,
           titleMarginBottom: 8,
           bodyFontFamily: 'Heebo',
-          bodyFontSize: 13,
+          bodyFontSize: 10,
           bodyFontColor: '#ffffff',
           multiKeyBackground: '#e9198e',
           borderColor: '#e9198e',
-          borderWidth: 2,
-          caretSize: 5,
-          cornerRadius: 5,
-          xPadding: 15,
-          yPadding: 15
+          borderWidth: 1,
+          caretSize: 3,
+          cornerRadius: 3,
+          xPadding: 12,
+          yPadding: 12
         }
     }
 });
@@ -230,14 +230,14 @@ var bar_chart_v = new Chart(bar_ctx_v, {
         scales: {
             yAxes: [{
                 gridLines: {
-                    lineWidth: 3,
+                    lineWidth: 1,
                     color: '#313154'
                 },
                 ticks: {
-                    min: 25,
+                    min: 10,
                     max: 100,
-                    stepSize: 25,
-                    fontSize: 13,
+                    stepSize: 10,
+                    fontSize: 10,
                     fontColor: "#FFFFFF"
                 }
             }],
@@ -246,7 +246,7 @@ var bar_chart_v = new Chart(bar_ctx_v, {
                     display: false,
                 },
                 ticks: {
-                    fontSize: 13,
+                    fontSize: 10,
                     fontColor: "#FFFFFF",
                     padding: 10
                 },
@@ -257,18 +257,18 @@ var bar_chart_v = new Chart(bar_ctx_v, {
           backgroundColor: '#282843',
           titleFontFamily: 'Heebo',
           titleFontColor: '#e79aaf',
-          titleFontSize: 13,
+          titleFontSize: 10,
           titleMarginBottom: 8,
           bodyFontFamily: 'Heebo',
-          bodyFontSize: 13,
+          bodyFontSize: 10,
           bodyFontColor: '#ffffff',
           multiKeyBackground: '#e9198e',
           borderColor: '#e9198e',
           borderWidth: 2,
-          caretSize: 5,
-          cornerRadius: 5,
-          xPadding: 15,
-          yPadding: 15
+          caretSize: 3,
+          cornerRadius: 3,
+          xPadding: 12,
+          yPadding: 12
         }
     }
 });
@@ -324,21 +324,21 @@ var bar_chart_h = new Chart(bar_ctx_h, {
                     display: false,
                 },
                 ticks: {
-                    fontSize: 13,
+                    fontSize: 10,
                     fontColor: "#FFFFFF"
                 },
                 barPercentage: 1
             }],
             xAxes: [{
                 gridLines: {
-                    lineWidth: 2,
+                    lineWidth: 1,
                     color: '#313154'
                 },
                 ticks: {
-                    min: 50,
+                    min: 10,
                     max: 100,
-                    stepSize: 25,
-                    fontSize: 13,
+                    stepSize: 10,
+                    fontSize: 10,
                     fontColor: "#FFFFFF"
                 }
             }],
@@ -347,18 +347,18 @@ var bar_chart_h = new Chart(bar_ctx_h, {
           backgroundColor: '#282843',
           titleFontFamily: 'Heebo',
           titleFontColor: '#e79aaf',
-          titleFontSize: 13,
+          titleFontSize: 10,
           titleMarginBottom: 8,
           bodyFontFamily: 'Heebo',
-          bodyFontSize: 13,
+          bodyFontSize: 10,
           bodyFontColor: '#ffffff',
           multiKeyBackground: '#e9198e',
           borderColor: '#e9198e',
           borderWidth: 2,
-          caretSize: 5,
-          cornerRadius: 5,
-          xPadding: 15,
-          yPadding: 15
+          caretSize: 3,
+          cornerRadius: 3,
+          xPadding: 12,
+          yPadding: 12
         }
     }
 });
@@ -474,3 +474,122 @@ $(document).ready(function() {
     });
         
     });
+
+
+
+
+    // vars
+'use strict'
+var	testim = document.getElementById("testim"),
+		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimLeftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer,
+		touchStartPos,
+		touchEndPos,
+		touchPosDiff,
+		ignoreTouch = 30;
+;
+
+window.onload = function() {
+
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length-1;
+        }
+
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");            
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+    
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function() {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+    }
+
+    testimLeftArrow.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+    })
+
+    testimRightArrow.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+    })    
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+
+    playSlide(currentSlide);
+
+    // keyboard shortcuts
+    document.addEventListener("keyup", function(e) {
+        switch (e.keyCode) {
+            case 37:
+                testimLeftArrow.click();
+                break;
+                
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            case 39:
+                testimRightArrow.click();
+                break;
+
+            default:
+                break;
+        }
+    })
+		
+		testim.addEventListener("touchstart", function(e) {
+				touchStartPos = e.changedTouches[0].clientX;
+		})
+	
+		testim.addEventListener("touchend", function(e) {
+				touchEndPos = e.changedTouches[0].clientX;
+			
+				touchPosDiff = touchStartPos - touchEndPos;
+			
+				console.log(touchPosDiff);
+				console.log(touchStartPos);	
+				console.log(touchEndPos);	
+
+			
+				if (touchPosDiff > 0 + ignoreTouch) {
+						testimLeftArrow.click();
+				} else if (touchPosDiff < 0 - ignoreTouch) {
+						testimRightArrow.click();
+				} else {
+					return;
+				}
+			
+		})
+}
+
+
+
+
+
+    
