@@ -1,7 +1,7 @@
 var options = {
     "particles": {
         "number": {
-            "value": 99,
+            "value": 300,
             "density": {
                 "enable": true,
                 "value_area": 552.4033491425909
