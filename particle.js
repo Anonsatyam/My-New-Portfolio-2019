@@ -8,13 +8,13 @@ var options = {
             }
         },
         "color": {
-            "value": "#ffffff"
+            "value": "#000"
         },
         "shape": {
             "type": "circle",
             "stroke": {
                 "width": 0,
-                "color": "#000000"
+                "color": "#000"
             },
             "polygon": {
                 "nb_sides": 3
@@ -48,7 +48,7 @@ var options = {
         "line_linked": {
             "enable": false,
             "distance": 150,
-            "color": "#ffffff",
+            "color": "#000",
             "opacity": 0.4,
             "width": 1
         },

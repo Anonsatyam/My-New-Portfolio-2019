@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:400");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 body {
     background-color: #e0e0e0 grey;
@@ -11,8 +12,9 @@ body {
 }
 
 #particle {
-    background-color: black;
+    background-color: #FFE000;
     position: relative;
+    color: black;
     top: 0;
     right: 0;
     bottom: 0;
@@ -25,7 +27,7 @@ body {
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
-    color: #fff;
+    color: black;
     max-width: 90%;
     padding: 2em 3em;
     background: transparent;
@@ -161,7 +163,7 @@ h4 strong {
 .centeredBox {
     width: 100%;
     text-align: center;
-    color: #00c853;
+    color: #000;
     font-size: 20px;
     font-family: "Monaco", Inconsolata, monospace;
 }
@@ -170,7 +172,7 @@ h4 strong {
     .centeredBox {
         width: 100%;
         text-align: center;
-        color: #00c853;
+        color: #000;
         font-size: 18px;
     }
 
@@ -241,12 +243,12 @@ h4 strong {
 /* #typewriter {} */
 
 .cursor {
-    border-left: 4px solid #00c853;
+    border-left: 4px solid #000;
 }
 
 .dollar:before {
     content: '$';
-    color: #00c853;
+    color: #000;
 }
 
 
@@ -329,6 +331,7 @@ h4 strong {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 40px;
+    position: relative;
 }
 
 .my_img {
@@ -1011,3 +1014,60 @@ option {
     }
 
 }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 100vh; */
+}
+.wrapper h2 a{
+    text-decoration: none;
+    color: #000;
+    font-family:'Roboto', sans-serif;
+}
+.wrapper h2 a:hover{
+    color: #9036D4;
+}
+.wrapper h2:after, .wrapper h2:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    height: 100px;
+    width: 100px;
+    transition-duration: 0.3s;
+    border: 0 solid #fff;
+    opacity: 0.7;
+}
+.wrapper h2:before {
+    border-right-width: 10px;
+    border-top-width: 10px;
+    border-right-color: #000;
+    border-top-color: #000;
+    right: -35px;
+    top: -25px;
+}
+.wrapper h2:after {
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    bottom: -25px;
+    left: -35px;
+}
+.wrapper h2:hover:before, .wrapper h2:hover:after {
+    width: 62.4vw;
+    height: 46.4vh;
+    opacity: 1;
+}
+
+.wrapper h2 a:focus {
+    color: #9036d4;
+    outline: none;
+}
+.wrapper h2:focus-within:before, .wrapper h2:focus-within:after {
+    width: 62.4vw;
+    height: 100vh;
+    opacity: 1;
+}
+
+

@@ -369,7 +369,7 @@ var bar_chart_h = new Chart(bar_ctx_h, {
 var typeWriterElement = document.getElementById('typewriter');
 
 // The TextArray: 
-var textArray = ["$Hey, I'm Web Developer | Designer.","$I like to Code."];
+var textArray = ["$Hey, I'm Web Developer.","$I like to Code."];
 
 // You can also do this by transfering it through a data-attribute
 // var textArray = typeWriterElement.getAttribute('data-array');
@@ -481,7 +481,7 @@ $(document).ready(function() {
     // vars
 'use strict'
 var	testim = document.getElementById("testim"),
-		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+	testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
     testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
     testimLeftArrow = document.getElementById("left-arrow"),
     testimRightArrow = document.getElementById("right-arrow"),
@@ -489,10 +489,10 @@ var	testim = document.getElementById("testim"),
     currentSlide = 0,
     currentActive = 0,
     testimTimer,
-		touchStartPos,
-		touchEndPos,
-		touchPosDiff,
-		ignoreTouch = 30;
+	touchStartPos,
+	touchEndPos,
+	touchPosDiff,
+	ignoreTouch = 30;
 ;
 
 window.onload = function() {
