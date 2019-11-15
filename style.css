@@ -201,7 +201,8 @@ h4 strong {
         width: 100%;
         text-align: center;
         color: #000;
-        font-size: 14.5px;
+        font-size: 14px;
+        margin-top: 8px;
     }
 
     #boxes .window {
