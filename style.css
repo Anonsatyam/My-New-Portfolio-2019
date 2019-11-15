@@ -58,6 +58,9 @@ header {
 }
 
 @media screen and (max-width: 670px) {
+    body{
+        overflow-x: hidden;
+    }
     header {
         min-height: auto;
         min-width: 100%;
