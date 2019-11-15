@@ -66,16 +66,19 @@ header {
         margin: 0px;
         padding: 0px;
     }
-    #submit{
+
+    #submit {
         min-width: 80%;
     }
-    .foot_massage{
+
+    .foot_massage {
         margin: 0;
         font-size: 13px;
         text-align: center;
         min-width: 100%;
     }
-    .name{
+
+    .name {
         color: #FFE000;
         font-size: 13px;
     }
@@ -86,17 +89,12 @@ header {
     }
 
     h2.center {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .details {
         min-width: 100%;
     }
-    .wrapper h2 a {
-        text-decoration: none;
-        color: #000;
-        font-family: 'Roboto', sans-serif;
-        font-size: x-large;
 }
 
 .section {
@@ -202,7 +200,7 @@ h4 strong {
         text-align: center;
         color: #000;
         font-size: 14px;
-        margin-top: 8px;
+        margin-top: 8;
     }
 
     #boxes .window {
@@ -1071,7 +1069,7 @@ option {
     width: 100px;
     transition-duration: 0.3s;
     border: 0 solid #fff;
-    
+
 }
 
 .wrapper h2:before {
