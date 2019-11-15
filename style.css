@@ -1108,7 +1108,7 @@ option {
 }
 
 
-#services {
+#about {
     margin-top: 0 !important;
 }
 
@@ -1134,4 +1134,11 @@ i.small {
 
 .social:hover {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.21);
+}
+p.foot_massage {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    font-size: 13px;
+    text-align: center;
+    min-width: 100%;
 }
