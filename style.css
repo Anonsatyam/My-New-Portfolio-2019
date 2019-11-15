@@ -92,6 +92,11 @@ header {
     .details {
         min-width: 100%;
     }
+    .wrapper h2 a {
+        text-decoration: none;
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+        font-size: x-large;
 }
 
 .section {
@@ -196,7 +201,7 @@ h4 strong {
         width: 100%;
         text-align: center;
         color: #000;
-        font-size: 18px;
+        font-size: 14.5px;
     }
 
     #boxes .window {
@@ -1065,7 +1070,7 @@ option {
     width: 100px;
     transition-duration: 0.3s;
     border: 0 solid #fff;
-    opacity: 0.7;
+    
 }
 
 .wrapper h2:before {
