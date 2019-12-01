@@ -78,10 +78,9 @@ header {
         min-width: 100%;
     }
 
-    .name {
-        color: #FFE000;
-        font-size: 13px;
-    }
+   
+
+
 
     header {
         min-height: auto;
@@ -198,41 +197,12 @@ h4 strong {
     .centeredBox {
         width: 100%;
         text-align: center;
-        color: #000;
+        color: #9036D4 !important;
         font-size: 14px;
         margin-top: 8;
     }
 
-    #boxes .window {
-        position: absolute;
-        left: 0;
-        top: 100px !important;
-        width: 300px !important;
-        height: 200px;
-        display: none;
-        z-index: 9999;
-        padding: 20px;
-        border-radius: 15px;
-        text-align: center;
-    }
-
-    #boxes #dialog {
-        width: 750px;
-        height: 300px;
-        padding: 10px;
-        background-color: #ffffff;
-        font-family: 'Segoe UI Light', sans-serif;
-        font-size: 15pt;
-    }
-
-    #popupfoot {
-        font-size: 16pt;
-        position: absolute;
-        bottom: 0px;
-        text-align: center;
-        width: 100% !important;
-        left: 0 !important;
-    }
+    
 
     .left {
 
@@ -264,11 +234,6 @@ h4 strong {
 
 }
 
-/* The Typewriter */
-
-
-/* #typewriter {} */
-
 .cursor {
     border-left: 4px solid #000;
 }
@@ -277,60 +242,6 @@ h4 strong {
     content: '$';
     color: #000;
 }
-
-
-/* #section{
-    
-} */
-
-
-
-
-
-
-
-#mask {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 3203px !important;
-    z-index: 9000;
-    background-color: #000;
-    display: none;
-}
-
-#boxes .window {
-    position: absolute;
-    left: 0;
-    top: 100px !important;
-    width: 400px;
-    height: 200px;
-    display: none;
-    z-index: 9999;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-}
-
-#boxes #dialog {
-    width: 750px;
-    height: 300px;
-    padding: 10px;
-    background-color: #ffffff;
-    font-family: 'Segoe UI Light', sans-serif;
-    font-size: 15pt;
-}
-
-#popupfoot {
-    font-size: 16pt;
-    position: absolute;
-    bottom: 0px;
-    width: 250px;
-    left: 250px;
-    margin-bottom: 20px;
-}
-
-/* PreLoader */
 
 .head {
     letter-spacing: .8px;
@@ -421,31 +332,6 @@ option {
 #choose {
     margin-top: 10px !important;
 }
-
-
-
-
-
-/* @import url(//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css);
-
-
-*,
-*:after,
-*:before {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    cursor: default;
-} */
 
 .clients {
     margin-top: 10% !important;
@@ -1035,9 +921,17 @@ option {
     .testim .arrow {
         font-size: 1.5em;
     }
+    .name a{
+        color: #9036D4 !important;
+    }
 
     .testim .cont div p {
         line-height: 25px;
+    }
+    .wrapper h2 a {
+        text-decoration: none;
+        color: #9036D4 !important;
+        font-family: 'Roboto', sans-serif;
     }
 
 }
@@ -1052,7 +946,7 @@ option {
 
 .wrapper h2 a {
     text-decoration: none;
-    color: #000;
+    color: #9036D4;
     font-family: 'Roboto', sans-serif;
 }
 

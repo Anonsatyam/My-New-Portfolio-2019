@@ -1,3 +1,4 @@
+
 Chart.defaults.global.defaultFontFamily = "Heebo";
 
 // Get Vertical bar chart canvas element
@@ -17,10 +18,10 @@ gradientHoverV.addColorStop(1, '#e79aaf');
 var bar_chart_v = new Chart(bar_ctx_v, {
     type: 'bar',
     data: {
-        labels: ["H T M L 5", "C S S 3", "J A V A S C R I P T", "S A S S", "R E A C T  J S", "A N G U L A R  J S", "B O O T S T R A P"],
+        labels: ["H T M L 5", "C S S 3", "J A V A S C R I P T", "S A S S", "M A T E R I A L I Z E  C S S", "A J A X" , "J Q U E R Y" , "A N G U L A R  J S", "B O O T S T R A P"],
         datasets: [{
             label: "S K I L L  S C O R E",
-            data: [99, 99, 80, 90, 80, 85, 85],
+            data: [99, 99, 80, 90, 80, 70, 65, 85, 85],
             backgroundColor: gradientColorV,
             hoverBackgroundColor: gradientHoverV,
             hoverBorderWidth: 2,
@@ -108,10 +109,10 @@ gradientHoverH.addColorStop(1, '#e79aaf');
 var bar_chart_h = new Chart(bar_ctx_h, {
     type: 'horizontalBar',
     data: {
-        labels: ["H T M L 5", "C S S 3", "J A V A S C R I P T", "S A S S", "R E A C T  J S", "A N G U L A R  J S", "B O O T S T R A P"],
+        labels: ["H T M L 5", "C S S 3", "J A V A S C R I P T", "S A S S", "M A T E R I A L I Z E  C S S", "A J A X" , "J Q U E R Y" , "A N G U L A R  J S", "B O O T S T R A P"],
         datasets: [{
             label: "S K I L L  S C O R E",
-            data: [99, 99, 80, 90, 80, 85, 85],
+            data: [99, 99, 80, 90, 80, 70, 65, 85, 85],
             backgroundColor: gradientColorH,
             hoverBackgroundColor: gradientHoverH,
             hoverBorderWidth: 1,
@@ -365,6 +366,192 @@ var bar_chart_h = new Chart(bar_ctx_h, {
 
 
 
+//CMS Skills
+// Get Vertical bar chart canvas element
+var bar_ctx_v = document.getElementById('vertical-chart-c').getContext('2d');
+
+// Vertical grtadient one
+var gradientColorV = bar_ctx_v.createLinearGradient(0, 0, 0, 700);
+gradientColorV.addColorStop(0, '#e79aaf');
+gradientColorV.addColorStop(1, '#e9198e');
+
+// Vertical grtadient two
+var gradientHoverV = bar_ctx_v.createLinearGradient(0, 0, 0, 700);
+gradientHoverV.addColorStop(0, '#e9198e');
+gradientHoverV.addColorStop(1, '#e79aaf');
+
+// Vertical bar chart options
+var bar_chart_v = new Chart(bar_ctx_v, {
+    type: 'bar',
+    data: {
+        labels: ["W O R D P R E S S", "B L O G G E R", "S H O P I F Y", "R U P A L", "M A G E N T O"],
+        datasets: [{
+            label: "S K I L L  S C O R E",
+            data: [70, 70, 60, 60, 60],
+            backgroundColor: gradientColorV,
+            hoverBackgroundColor: gradientHoverV,
+            hoverBorderWidth: 2,
+            hoverBorderColor: '#ffffff'
+        }]
+    },
+    options: {
+        responsive: true,
+	      maintainAspectRatio: true,
+        layout: {
+            padding: {
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 0
+            }
+        },
+        legend: {
+            display: false
+        },
+        animation: {
+            duration: 3000,
+            easing: 'easeInBounce'
+        },
+        scales: {
+            yAxes: [{
+                gridLines: {
+                    lineWidth: 1,
+                    color: '#313154'
+                },
+                ticks: {
+                    min: 10,
+                    max: 100,
+                    stepSize: 10,
+                    fontSize: 10,
+                    fontColor: "#FFFFFF"
+                }
+            }],
+            xAxes: [{
+                gridLines: {
+                    display: false,
+                },
+                ticks: {
+                    fontSize: 10,
+                    fontColor: "#FFFFFF",
+                    padding: 10
+                },
+                barPercentage: 0.6
+            }],
+        },
+      	tooltips: {
+          backgroundColor: '#282843',
+          titleFontFamily: 'Heebo',
+          titleFontColor: '#e79aaf',
+          titleFontSize: 10,
+          titleMarginBottom: 8,
+          bodyFontFamily: 'Heebo',
+          bodyFontSize: 10,
+          bodyFontColor: '#ffffff',
+          multiKeyBackground: '#e9198e',
+          borderColor: '#e9198e',
+          borderWidth: 2,
+          caretSize: 3,
+          cornerRadius: 3,
+          xPadding: 12,
+          yPadding: 12
+        }
+    }
+});
+
+// Get Horizontal bar chart canvas element
+var bar_ctx_h = document.getElementById('horizontal-chart-c').getContext('2d');
+
+// Horizontal grtadient one
+var gradientColorH = bar_ctx_h.createLinearGradient(300, 0, 0, 0);
+gradientColorH.addColorStop(0, '#e79aaf');
+gradientColorH.addColorStop(1, '#e9198e');
+
+// Vertical grtadient two
+var gradientHoverH = bar_ctx_h.createLinearGradient(300, 0, 0, 0);
+gradientHoverH.addColorStop(0, '#e9198e');
+gradientHoverH.addColorStop(1, '#e79aaf');
+
+// Vertical bar chart options
+var bar_chart_h = new Chart(bar_ctx_h, {
+    type: 'horizontalBar',
+    data: {
+        labels: ["W O R D P R E S S", "B L O G G E R", "S H O P I F Y", "R U P A L", "M A G E N T O"],
+        datasets: [{
+            label: "S K I L L  S C O R E",
+            data: [70, 70, 60, 60, 60],
+            backgroundColor: gradientColorH,
+            hoverBackgroundColor: gradientHoverH,
+            hoverBorderWidth: 1,
+            hoverBorderColor: '#ffffff'
+        }]
+    },
+    options: {
+        responsive: true,
+	      maintainAspectRatio: true,
+        layout: {
+            padding: {
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 0
+            }
+        },
+        legend: {
+            display: false
+        },
+        animation: {
+            duration: 3000,
+            easing: 'easeInBounce'
+        },
+        scales: {
+            yAxes: [{
+                gridLines: {
+                    display: false,
+                },
+                ticks: {
+                    fontSize: 10,
+                    fontColor: "#FFFFFF"
+                },
+                barPercentage: 1
+            }],
+            xAxes: [{
+                gridLines: {
+                    lineWidth: 1,
+                    color: '#313154'
+                },
+                ticks: {
+                    min: 10,
+                    max: 100,
+                    stepSize: 10,
+                    fontSize: 10,
+                    fontColor: "#FFFFFF"
+                }
+            }],
+        },
+      	tooltips: {
+          backgroundColor: '#282843',
+          titleFontFamily: 'Heebo',
+          titleFontColor: '#e79aaf',
+          titleFontSize: 10,
+          titleMarginBottom: 8,
+          bodyFontFamily: 'Heebo',
+          bodyFontSize: 10,
+          bodyFontColor: '#ffffff',
+          multiKeyBackground: '#e9198e',
+          borderColor: '#e9198e',
+          borderWidth: 2,
+          caretSize: 3,
+          cornerRadius: 3,
+          xPadding: 12,
+          yPadding: 12
+        }
+    }
+});
+
+
+
+
+
 // The typewriter element
 var typeWriterElement = document.getElementById('typewriter');
 
@@ -422,63 +609,7 @@ setTimeout( function () {
 	StartWriter(0);
 },500);
 
-
-
-
-
-
-
-
-
-
-
-$(document).ready(function() {	
-
-    var id = '#dialog';
-        
-    //Get the screen height and width
-    var maskHeight = $(document).height();
-    var maskWidth = $(window).width();
-        
-    //Set heigth and width to mask to fill up the whole screen
-    $('#mask').css({'width':maskWidth,'height':maskHeight});
-    
-    //transition effect
-    $('#mask').fadeIn(500);	
-    $('#mask').fadeTo("slow",0.9);	
-        
-    //Get the window height and width
-    var winH = $(window).height();
-    var winW = $(window).width();
-                  
-    //Set the popup window to center
-    $(id).css('top',  winH/2-$(id).height()/2);
-    $(id).css('left', winW/2-$(id).width()/2);
-        
-    //transition effect
-    $(id).fadeIn(2000); 	
-        
-    //if close button is clicked
-    $('.window .close').click(function (e) {
-    //Cancel the link behavior
-    e.preventDefault();
-    
-    $('#mask').hide();
-    $('.window').hide();
-    });
-    
-    //if mask is clicked
-    $('#mask').click(function () {
-    $(this).hide();
-    $('.window').hide();
-    });
-        
-    });
-
-
-
-
-    // vars
+  // vars
 'use strict'
 var	testim = document.getElementById("testim"),
 	testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
@@ -587,6 +718,9 @@ window.onload = function() {
 			
 		})
 }
+
+
+
 
 
 
