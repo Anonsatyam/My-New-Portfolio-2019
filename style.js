@@ -384,7 +384,7 @@ gradientHoverV.addColorStop(1, '#e79aaf');
 var bar_chart_v = new Chart(bar_ctx_v, {
     type: 'bar',
     data: {
-        labels: ["W O R D P R E S S", "B L O G G E R", "S H O P I F Y", "R U P A L", "M A G E N T O"],
+        labels: ["W O R D P R E S S", "B L O G G E R", "S H O P I F Y", "D R U P A L", "M A G E N T O"],
         datasets: [{
             label: "S K I L L  S C O R E",
             data: [70, 70, 60, 60, 60],
@@ -475,7 +475,7 @@ gradientHoverH.addColorStop(1, '#e79aaf');
 var bar_chart_h = new Chart(bar_ctx_h, {
     type: 'horizontalBar',
     data: {
-        labels: ["W O R D P R E S S", "B L O G G E R", "S H O P I F Y", "R U P A L", "M A G E N T O"],
+        labels: ["W O R D P R E S S", "B L O G G E R", "S H O P I F Y", "D R U P A L", "M A G E N T O"],
         datasets: [{
             label: "S K I L L  S C O R E",
             data: [70, 70, 60, 60, 60],
