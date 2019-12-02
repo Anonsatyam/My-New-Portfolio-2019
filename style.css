@@ -78,6 +78,9 @@ header {
         text-align: center;
         min-width: 100%;
     }
+    .about_me_para {
+        font-family: serif !important;
+    }
 
    
 
