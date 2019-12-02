@@ -355,52 +355,52 @@
             $('.tooltipped').tooltip();
         });
 
-        $(function () {
-            $('#submit').click(function (e) {
-                var valid = this.form.checkValidity();
-                if (valid) {
-                    var name = $('#name').val();
-                    var email = $('#email').val();
-                    var interest = $('#interest').val();
-                    var phone = $('#phone').val();
-                    var message = $('#message').val();
-                    var files = $('#files').val();
-                    e.preventDefault();
-                    $.ajax({
-                        type: 'POST',
-                        url: 'process.php',
-                        data: {
-                            name: name,
-                            email: email,
-                            interest: interest,
-                            phone: phone,
-                            message: message,
-                            files: files
-                        },
-                        success: function (data) {
-                            Swal.fire({
-                                'title': 'Successfull',
-                                'text': data,
-                                'type': 'success'
-                            })
-                        },
-                        error: function (data) {
-                            Swal.fire({
-                                'title': 'Errors',
-                                'text': 'There Were Errors',
-                                'type': 'error'
-                            })
-                        }
-                    });
+        // $(function () {
+        //     $('#submit').click(function (e) {
+        //         var valid = this.form.checkValidity();
+        //         if (valid) {
+        //             var name = $('#name').val();
+        //             var email = $('#email').val();
+        //             var interest = $('#interest').val();
+        //             var phone = $('#phone').val();
+        //             var message = $('#message').val();
+        //             var files = $('#files').val();
+        //             e.preventDefault();
+        //             $.ajax({
+        //                 type: 'POST',
+        //                 url: 'process.php',
+        //                 data: {
+        //                     name: name,
+        //                     email: email,
+        //                     interest: interest,
+        //                     phone: phone,
+        //                     message: message,
+        //                     files: files
+        //                 },
+        //                 success: function (data) {
+        //                     Swal.fire({
+        //                         'title': 'Successfull',
+        //                         'text': data,
+        //                         'type': 'success'
+        //                     })
+        //                 },
+        //                 error: function (data) {
+        //                     Swal.fire({
+        //                         'title': 'Errors',
+        //                         'text': 'There Were Errors',
+        //                         'type': 'error'
+        //                     })
+        //                 }
+        //             });
 
-                } else {
+        //         } else {
 
-                }
+        //         }
 
-            });
+        //     });
 
 
-        });
+        // });
     </script>
 
 </body>
