@@ -4,6 +4,7 @@
 body {
     background-color: #e0e0e0 grey;
     overflow-x: hidden;
+    /* font-family: "apercu",sans-serif; */
 }
 
 :root {
@@ -201,6 +202,10 @@ h4 strong {
         font-size: 14px;
         margin-top: 8;
     }
+    .testim{
+        margin-top: 100px;
+        position: fixed;
+    }
 
     
 
@@ -258,11 +263,12 @@ h4 strong {
 }
 
 .nav_list {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 45px;
     font-weight: 700;
     padding: 10px 20px;
     text-transform: uppercase;
+    font-family: sans-serif;
 }
 
 .name {
@@ -290,7 +296,7 @@ h4 strong {
 }
 
 .about_me_para {
-    font-family: 'Crimson Text', serif;
+    font-family: Cursive;
     font-size: 17px;
     font-weight: 300;
     line-height: 1.8;
@@ -299,6 +305,53 @@ h4 strong {
 .buttons {
     display: inline-flex;
 }
+button.my_cards{
+    border-radius: 4px;
+    /* background-color: #26a69a !important; */
+    border: none;
+    color: #fff !important;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* margin: 36px; */
+    /* box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7); */
+}
+.cards a{
+    color: #fff !important;
+}
+button.my_cards{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+button.my_cards:after {
+    content: '>>';
+    position: absolute;
+    size: 16px;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button.my_cards:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  button.my_cards:hover:after {
+    opacity: 1;
+    right: 40px;
+  }
+  button.my_submit:hover:after {
+    opacity: 1;
+    right: 130px;
+  }
 
 .button_data {
     margin: 10px;
@@ -307,7 +360,7 @@ h4 strong {
 #latest_work_para {
     font-family: 'Crimson Text', serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 2;
     color: #333;
 }
@@ -947,7 +1000,7 @@ option {
 
 .wrapper h2 a {
     text-decoration: none;
-    color: #9036D4;
+    color: #000;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -970,8 +1023,8 @@ option {
 .wrapper h2:before {
     border-right-width: 10px;
     border-top-width: 10px;
-    border-right-color: #000;
-    border-top-color: #000;
+    border-right-color: #9036D4;
+    border-top-color: #9036D4;
     right: -35px;
     top: -25px;
 }

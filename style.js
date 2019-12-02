@@ -556,7 +556,7 @@ var bar_chart_h = new Chart(bar_ctx_h, {
 var typeWriterElement = document.getElementById('typewriter');
 
 // The TextArray: 
-var textArray = ["Hey, I'm Web Developer.","I like to Code."];
+var textArray = ["$Hey, I'm Web Developer.","$I like to Code."];
 
 // You can also do this by transfering it through a data-attribute
 // var textArray = typeWriterElement.getAttribute('data-array');
