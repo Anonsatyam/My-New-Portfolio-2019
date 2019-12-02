@@ -211,7 +211,7 @@ h4 strong {
     }
     button.my_submit:hover:after {
         opacity: 1;
-        right: 80px;
+        right: 50px;
       }
 
     
