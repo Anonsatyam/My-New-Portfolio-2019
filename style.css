@@ -1093,3 +1093,8 @@ p.foot_massage {
     text-align: center;
     min-width: 100%;
 }
+.sidenav-overlay{
+    background-color: #fff !important;
+    color: #000 !important;
+    opacity: 0 !important;
+}
