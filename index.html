@@ -51,7 +51,7 @@
                                 data-tooltip="HackerRank">
                                 <i class="fab fa-hackerrank black-text"></i>
                             </a></li>
-                            <li><a href="https://stackoverflow.com/users/8664011/satyam-singh"
+                        <li><a href="https://stackoverflow.com/users/8664011/satyam-singh"
                                 class="tooltipped btn-floating btn-small indigo-darken-4 transparent social"
                                 data-tooltip="Stack-Overflow">
                                 <i class="fab fa-stack-overflow black-text"></i>
@@ -68,8 +68,7 @@
                                 data-tooltip="Instagram">
                                 <i class="fab fa-instagram black-text right"></i>INSTAGRAM
                             </a>
-                            <a class="tooltipped" href="https://github.com/Anonsatyam" 
-                                data-tooltip="Github">
+                            <a class="tooltipped" href="https://github.com/Anonsatyam" data-tooltip="Github">
                                 <i class="fab fa-github black-text right"></i>GITHUB
                             </a>
                             <a class="tooltipped" href="https://www.linkedin.com/in/satyam-singh-01bab5173/"
@@ -327,18 +326,21 @@
                     </div>
                     <div class="input-field">
                         <i class="material-icons prefix">message</i>
-                        <textarea id="message" class="materialize-textarea" name="message" data-length="120" required></textarea>
+                        <textarea id="message" class="materialize-textarea" name="message" data-length="120"
+                            required></textarea>
                         <label for="message">Message <span class="error">*</label>
                     </div>
                     <div class="input-field">
                         <i class="material-icons prefix">attach_file</i>
                         <!-- <label for="textarea1">Select Files</label><br> -->
-                        <input id="files" for='files' type="file" name="myFile" placeholder="Upload File" multiple><br><br>
+                        <input id="files" for='files' type="file" name="myFile" placeholder="Upload File"
+                            multiple><br><br>
                     </div>
                     <div class="input-field center">
                         <!-- <button class="btn light-blue" ><i
                                 class="material-icons right">send</i>Submit</button> -->
-                        <button type="submit" class="my_cards light-blue my_submit" id="submit"><span></span>Submit</span></button>
+                        <button type="submit" class="my_cards light-blue my_submit"
+                            id="submit"><span></span>Submit</span></button>
                     </div>
                 </form>
             </div>
@@ -372,6 +374,10 @@
             $('.parallax').parallax();
             $('.tabs').tabs();
             $('.tooltipped').tooltip();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
         });
 
         // $(function () {
