@@ -1109,3 +1109,10 @@ p.foot_massage {
     clear: both;
     
 } */
+button.all_project{
+    background-color: #03a9f4 !important;
+    color: white !important;
+}
+.all_project a{
+    color: white !important;
+}
