@@ -2,7 +2,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 body {
-    background-color: #e0e0e0 grey;
+    background-color: #000;
     overflow-x: hidden;
     /* font-family: "apercu",sans-serif; */
 }
@@ -14,7 +14,7 @@ body {
 }
 
 #particle {
-    background-color: #FFE000;
+    background-color: black;
     position: relative;
     color: black;
     top: 0;
@@ -192,7 +192,7 @@ h4 strong {
 .centeredBox {
     width: 100%;
     text-align: center;
-    color: #000;
+    color: fff;
     font-size: 20px;
     font-family: "Monaco", Inconsolata, monospace;
 }
@@ -263,7 +263,7 @@ h4 strong {
     font-family: 'Crimson Text', serif;
     font-weight: 300;
     line-height: 1.2;
-    color: #323232;
+    color: #fff;
 
 
     margin-top: 0;
@@ -307,6 +307,7 @@ h4 strong {
     font-size: 17px;
     font-weight: 300;
     line-height: 1.8;
+    color: white !important;
 }
 
 .buttons {
@@ -1007,7 +1008,7 @@ option {
 
 .wrapper h2 a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
 }
 
