@@ -1,10 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Heebo:400");
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
 body {
     background-color: #000;
     overflow-x: hidden;
-    /* font-family: "apercu",sans-serif; */
 }
 
 :root {
